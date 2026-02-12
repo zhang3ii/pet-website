@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>壹嘉宠物医院 · YIJIA PET HOSPITAL</title>
+  <meta name="description" content="壹嘉宠物医院 — 用心呵护每一个小生命。专业宠物医疗、疫苗接种、健康体检、宠物美容。">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,wght@0,300;0,400;0,500;0,700;1,400&family=Noto+Serif+SC:wght@400;500;600;700&family=Noto+Sans+SC:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Cursor follower -->
+  <div class="cursor-glow" id="cursorGlow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav" id="nav">
+    <div class="nav-inner">
+      <a href="#hero" class="nav-logo">
+        <img src="logo.svg" alt="壹嘉宠物医院" class="nav-logo-img">
+        <div class="nav-logo-text">
+          <span class="nav-logo-cn">壹嘉宠物医院</span>
+          <span class="nav-logo-en">YIJIA PET HOSPITAL</span>
+        </div>
+      </a>
+      <div class="nav-links" id="navLinks">
+        <a href="#about" class="nav-link">关于我们</a>
+        <a href="#services" class="nav-link">医疗服务</a>
+        <a href="#team" class="nav-link">专家团队</a>
+        <a href="#environment" class="nav-link">医院环境</a>
+        <a href="#testimonials" class="nav-link">宠主心声</a>
+        <a href="#contact" class="nav-link nav-link-cta">预约咨询</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="菜单">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="hero-bg">
+      <div class="hero-shape hero-shape-1"></div>
+      <div class="hero-shape hero-shape-2"></div>
+      <div class="hero-shape hero-shape-3"></div>
+      <div class="hero-particles" id="heroParticles"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-badge reveal-up">
+        <span class="hero-badge-dot"></span>
+        专业 · 温暖 · 值得信赖
+      </div>
+      <h1 class="hero-title">
+        <span class="hero-title-line reveal-up" style="--delay: 0.1s">用心呵护</span>
+        <span class="hero-title-line hero-title-accent reveal-up" style="--delay: 0.2s">每一个小生命</span>
+      </h1>
+      <p class="hero-desc reveal-up" style="--delay: 0.35s">
+        壹嘉宠物医院，以专业的医疗技术和温暖的服务理念，<br>
+        为您的爱宠提供全方位的健康守护。
+      </p>
+      <div class="hero-actions reveal-up" style="--delay: 0.5s">
+        <a href="#contact" class="btn btn-primary">
+          <span>立即预约</span>
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+        </a>
+        <a href="#services" class="btn btn-ghost">
+          <span>了解服务</span>
+        </a>
+        <a href="tel:18507957950" class="btn btn-phone">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+          <span>185-0795-7950</span>
+        </a>
+      </div>
+      <div class="hero-stats reveal-up" style="--delay: 0.65s">
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="10">0</span><span class="hero-stat-plus">+</span>
+          <span class="hero-stat-label">年专业经验</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="50000">0</span><span class="hero-stat-plus">+</span>
+          <span class="hero-stat-label">成功诊疗</span>
+        </div>
+        <div class="hero-stat-divider"></div>
+        <div class="hero-stat">
+          <span class="hero-stat-num" data-count="98">0</span><span class="hero-stat-percent">%</span>
+          <span class="hero-stat-label">好评率</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="hero-scroll-line"></div>
+      <span>向下探索</span>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section class="section about" id="about">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-visual reveal-left">
+          <div class="about-img-wrapper">
+            <div class="about-img-placeholder">
+              <svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <circle cx="100" cy="100" r="95" stroke="var(--teal)" stroke-width="1.5" opacity="0.3"/>
+                <path d="M70 90 C70 70, 85 55, 100 55 C115 55, 130 70, 130 90 C130 110, 115 130, 100 140 C85 130, 70 110, 70 90Z" fill="var(--teal)" opacity="0.15"/>
+                <path d="M100 75 C108 75, 115 82, 115 90 C115 98, 108 105, 100 105 C92 105, 85 98, 85 90 C85 82, 92 75, 100 75Z" fill="var(--teal)" opacity="0.3"/>
+                <!-- Paw print -->
+                <circle cx="90" cy="63" r="6" fill="var(--teal)" opacity="0.4"/>
+                <circle cx="110" cy="63" r="6" fill="var(--teal)" opacity="0.4"/>
+                <circle cx="78" cy="78" r="5" fill="var(--teal)" opacity="0.4"/>
+                <circle cx="122" cy="78" r="5" fill="var(--teal)" opacity="0.4"/>
+                <ellipse cx="100" cy="92" rx="14" ry="12" fill="var(--teal)" opacity="0.5"/>
+              </svg>
+            </div>
+            <div class="about-img-tag">
+              <span class="about-img-tag-icon">🏥</span>
+              <span>始于热爱 忠于专业</span>
+            </div>
+          </div>
+          <div class="about-float-card">
+            <div class="about-float-icon">🐾</div>
+            <div>
+              <strong>24h 急诊服务</strong>
+              <p>全天候守护爱宠健康</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-content">
+          <div class="section-label reveal-up">ABOUT US</div>
+          <h2 class="section-title reveal-up" style="--delay: 0.1s">
+            不只是医院<br>
+            更是爱的<span class="text-accent">港湾</span>
+          </h2>
+          <p class="about-text reveal-up" style="--delay: 0.2s">
+            壹嘉宠物医院创立至今，始终秉持"专业、温暖、责任"的服务理念。我们深知每一位宠物都是家庭中不可或缺的成员，因此我们用对待家人的心态，为每一位毛孩子提供最专业、最贴心的医疗服务。
+          </p>
+          <p class="about-text reveal-up" style="--delay: 0.3s">
+            医院配备先进的医疗设备，汇聚经验丰富的兽医团队，涵盖内科、外科、皮肤科、眼科、牙科等多个专科领域，致力于为宠物提供全面、精准的诊疗服务。
+          </p>
+          <div class="about-features reveal-up" style="--delay: 0.4s">
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <span>进口医疗设备</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <span>硕博专家坐诊</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <span>无菌手术室</span>
+            </div>
+            <div class="about-feature">
+              <div class="about-feature-icon">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M9 12l2 2 4-4"/><circle cx="12" cy="12" r="10"/></svg>
+              </div>
+              <span>术后康复中心</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section class="section services" id="services">
+    <div class="services-bg"></div>
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal-up">OUR SERVICES</div>
+        <h2 class="section-title reveal-up" style="--delay: 0.1s">
+          专业医疗<span class="text-accent">服务</span>
+        </h2>
+        <p class="section-desc reveal-up" style="--delay: 0.2s">
+          覆盖宠物健康全周期，从预防保健到疑难杂症，我们都能提供专业解决方案
+        </p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card reveal-up" style="--delay: 0.1s">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M24 4v16M16 12h16M8 24h32v16a4 4 0 01-4 4H12a4 4 0 01-4-4V24z"/>
+              <circle cx="24" cy="34" r="4"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">健康体检</h3>
+          <p class="service-card-desc">全面系统的健康检查，包括血液检测、影像学检查、心电图等，早期发现潜在健康问题。</p>
+          <div class="service-card-tag">预防保健</div>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.2s">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M20 8c-6 0-12 6-12 14s12 20 16 22c4-2 16-14 16-22S34 8 28 8s-4 6-4 6-2-6-4-6z"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">内科诊疗</h3>
+          <p class="service-card-desc">消化系统、呼吸系统、泌尿系统等内科疾病的专业诊断与治疗，精准用药，科学治疗。</p>
+          <div class="service-card-tag">专科诊疗</div>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.3s">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <rect x="8" y="16" width="32" height="24" rx="4"/>
+              <path d="M16 16V12a8 8 0 1116 0v4"/>
+              <circle cx="24" cy="30" r="4"/>
+              <path d="M24 34v4"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">外科手术</h3>
+          <p class="service-card-desc">配备先进无菌手术室，涵盖软组织手术、骨科手术、肿瘤切除等各类手术项目。</p>
+          <div class="service-card-tag">外科中心</div>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.4s">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <circle cx="24" cy="24" r="18"/>
+              <path d="M24 14v10l6 6"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">疫苗接种</h3>
+          <p class="service-card-desc">提供犬猫核心疫苗及非核心疫苗接种服务，制定个性化免疫程序，科学预防传染病。</p>
+          <div class="service-card-tag">免疫防护</div>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.5s">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M14 24c0-8 10-16 10-16s10 8 10 16-4 12-10 12-10-4-10-12z"/>
+              <path d="M24 28v-8M20 24h8"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">皮肤专科</h3>
+          <p class="service-card-desc">真菌、细菌、寄生虫等皮肤疾病的精准诊断，过敏原检测，定制化治疗方案。</p>
+          <div class="service-card-tag">专科诊疗</div>
+        </div>
+        <div class="service-card reveal-up" style="--delay: 0.6s">
+          <div class="service-card-icon">
+            <svg viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.5">
+              <path d="M8 24c0-8.8 7.2-16 16-16s16 7.2 16 16"/>
+              <path d="M12 32c0-6.6 5.4-12 12-12s12 5.4 12 12"/>
+              <circle cx="24" cy="36" r="4"/>
+            </svg>
+          </div>
+          <h3 class="service-card-title">牙科护理</h3>
+          <p class="service-card-desc">宠物口腔健康管理，包括洁牙、拔牙、口腔疾病治疗，守护爱宠一口好牙。</p>
+          <div class="service-card-tag">口腔健康</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section class="section team" id="team">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal-up">EXPERT TEAM</div>
+        <h2 class="section-title reveal-up" style="--delay: 0.1s">
+          专家<span class="text-accent">团队</span>
+        </h2>
+        <p class="section-desc reveal-up" style="--delay: 0.2s">
+          每一位医师都经过严格筛选与专业培训，为您的爱宠保驾护航
+        </p>
+      </div>
+      <div class="team-grid">
+        <div class="team-card reveal-up" style="--delay: 0.15s">
+          <div class="team-card-img">
+            <div class="team-avatar">
+              <span>张</span>
+            </div>
+            <div class="team-card-overlay">
+              <p>从业10余年，擅长小动物内科、外科疑难杂症诊治</p>
+            </div>
+          </div>
+          <div class="team-card-info">
+            <h3>张与 医生</h3>
+            <span class="team-role">院长 · 主治医师</span>
+            <div class="team-tags">
+              <span>内科</span><span>外科</span><span>疑难杂症</span>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal-up" style="--delay: 0.25s">
+          <div class="team-card-img">
+            <div class="team-avatar" style="--avatar-bg: #E8D5E0">
+              <span>李</span>
+            </div>
+            <div class="team-card-overlay">
+              <p>毕业于中国农业大学，专攻小动物皮肤病与眼科</p>
+            </div>
+          </div>
+          <div class="team-card-info">
+            <h3>李思雨 医生</h3>
+            <span class="team-role">皮肤科 · 眼科 主治</span>
+            <div class="team-tags">
+              <span>皮肤科</span><span>眼科</span><span>过敏治疗</span>
+            </div>
+          </div>
+        </div>
+        <div class="team-card reveal-up" style="--delay: 0.35s">
+          <div class="team-card-img">
+            <div class="team-avatar" style="--avatar-bg: #D5E0E8">
+              <span>王</span>
+            </div>
+            <div class="team-card-overlay">
+              <p>骨科手术专家，擅长骨折复位、关节置换等复杂手术</p>
+            </div>
+          </div>
+          <div class="team-card-info">
+            <h3>王博文 医生</h3>
+            <span class="team-role">外科 · 骨科 主治</span>
+            <div class="team-tags">
+              <span>骨科</span><span>外科手术</span><span>运动康复</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Environment Section -->
+  <section class="section environment" id="environment">
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal-up">ENVIRONMENT</div>
+        <h2 class="section-title reveal-up" style="--delay: 0.1s">
+          温馨<span class="text-accent">环境</span>
+        </h2>
+        <p class="section-desc reveal-up" style="--delay: 0.2s">
+          洁净舒适的诊疗环境，让每一次就诊都是一段安心的体验
+        </p>
+      </div>
+      <div class="env-grid">
+        <div class="env-card reveal-up" style="--delay: 0.1s">
+          <div class="env-placeholder" style="--env-hue: 170">
+            <div class="env-placeholder-icon">🏥</div>
+            <span>接待大厅</span>
+          </div>
+          <div class="env-label">宽敞明亮的接待区域</div>
+        </div>
+        <div class="env-card reveal-up" style="--delay: 0.2s">
+          <div class="env-placeholder" style="--env-hue: 190">
+            <div class="env-placeholder-icon">💉</div>
+            <span>诊疗室</span>
+          </div>
+          <div class="env-label">独立温控诊疗空间</div>
+        </div>
+        <div class="env-card reveal-up" style="--delay: 0.3s">
+          <div class="env-placeholder" style="--env-hue: 160">
+            <div class="env-placeholder-icon">🔬</div>
+            <span>化验室</span>
+          </div>
+          <div class="env-label">进口精密检验设备</div>
+        </div>
+        <div class="env-card reveal-up" style="--delay: 0.4s">
+          <div class="env-placeholder" style="--env-hue: 180">
+            <div class="env-placeholder-icon">🛏️</div>
+            <span>住院部</span>
+          </div>
+          <div class="env-label">独立恒温住院护理</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="section testimonials" id="testimonials">
+    <div class="testimonials-bg"></div>
+    <div class="container">
+      <div class="section-header center">
+        <div class="section-label reveal-up">TESTIMONIALS</div>
+        <h2 class="section-title reveal-up" style="--delay: 0.1s">
+          宠主<span class="text-accent">心声</span>
+        </h2>
+        <p class="section-desc reveal-up" style="--delay: 0.2s">
+          来自宠主们的真实反馈，是对我们最好的肯定
+        </p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card reveal-up" style="--delay: 0.15s">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"我家金毛做了膝关节手术，张医生的手术非常精湛，术后恢复也很快。医护团队每天都会发视频更新恢复状态，非常贴心！"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🐕</div>
+            <div>
+              <strong>小李妈妈</strong>
+              <span>金毛 Lucky 的铲屎官</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up" style="--delay: 0.25s">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"猫咪年度体检都在壹嘉做，设备专业，医生很有耐心。最重要的是猫咪不会太抗拒，环境让它感觉很安心。强烈推荐！"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🐱</div>
+            <div>
+              <strong>布丁爸爸</strong>
+              <span>英短布丁的铲屎官</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card reveal-up" style="--delay: 0.35s">
+          <div class="testimonial-stars">★★★★★</div>
+          <p class="testimonial-text">"半夜狗狗突然不舒服，打电话过去居然有急诊！到了之后医生迅速检查并处理，真的太感谢了。有壹嘉在，安心多了。"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar">🐶</div>
+            <div>
+              <strong>阿柴的主人</strong>
+              <span>柴犬 阿柴 的铲屎官</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="section contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="contact-info">
+          <div class="section-label reveal-up">CONTACT US</div>
+          <h2 class="section-title reveal-up" style="--delay: 0.1s">
+            预约<span class="text-accent">咨询</span>
+          </h2>
+          <p class="contact-desc reveal-up" style="--delay: 0.2s">
+            扫描下方二维码或添加微信，即可预约咨询。<br>
+            我们会在第一时间回复您的消息。
+          </p>
+          <div class="contact-wechat reveal-up" style="--delay: 0.3s">
+            <div class="wechat-card">
+              <div class="wechat-icon">
+                <svg viewBox="0 0 48 48" fill="currentColor" width="32" height="32">
+                  <path d="M18.2 8C10.4 8 4 13.4 4 20.2c0 3.8 2 7.2 5.2 9.6L8 34.2l5-2.6c1.6.6 3.4.8 5.2.8.6 0 1.2 0 1.8-.1-.4-1.2-.6-2.4-.6-3.7 0-7.6 7-13.8 15.6-13.8.6 0 1.2 0 1.8.1C35.4 9.8 27.4 4 18.2 4v4zm-5.4 8a2 2 0 110-4 2 2 0 010 4zm10.4 0a2 2 0 110-4 2 2 0 010 4z"/>
+                  <path d="M44 28.6c0-5.6-5.6-10.2-12.4-10.2S19.2 23 19.2 28.6 24.8 38.8 31.6 38.8c1.4 0 2.8-.2 4-.6l4 2-1-3.6c2.6-2 4.4-5 4.4-8zm-16.2-2a1.6 1.6 0 110-3.2 1.6 1.6 0 010 3.2zm7.6 0a1.6 1.6 0 110-3.2 1.6 1.6 0 010 3.2z"/>
+                </svg>
+              </div>
+              <div class="wechat-info">
+                <span class="wechat-label">微信号</span>
+                <strong class="wechat-id">YiJia-petclinic</strong>
+                <span class="wechat-hint">添加微信，在线咨询预约</span>
+              </div>
+            </div>
+          </div>
+          <div class="contact-details reveal-up" style="--delay: 0.4s">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">联系人</span>
+                <strong>张与医生</strong>
+              </div>
+            </div>
+            <div class="contact-detail phone-highlight">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 16.92z"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">预约热线</span>
+                <a href="tel:18507957950" class="phone-number"><strong>185-0795-7950</strong></a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">营业时间</span>
+                <strong>9:00 - 21:00（全年无休）</strong>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              </div>
+              <div>
+                <span class="contact-detail-label">急诊服务</span>
+                <strong>24小时急诊热线在线</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="contact-form-wrapper reveal-right">
+          <form class="contact-form" id="contactForm">
+            <h3 class="form-title">在线预约</h3>
+            <p class="form-subtitle">填写以下信息，我们将尽快与您联系</p>
+            <div class="form-group">
+              <label for="ownerName">宠主姓名 <span class="required">*</span></label>
+              <input type="text" id="ownerName" name="ownerName" placeholder="请输入您的姓名" required>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="phone">联系电话 <span class="required">*</span></label>
+                <input type="tel" id="phone" name="phone" placeholder="手机号码" pattern="[0-9]{11}" required>
+              </div>
+              <div class="form-group">
+                <label for="petType">宠物类型 <span class="required">*</span></label>
+                <select id="petType" name="petType" required>
+                  <option value="">请选择</option>
+                  <option value="dog">🐶 犬类</option>
+                  <option value="cat">🐱 猫类</option>
+                  <option value="other">🐾 其他</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="petName">宠物名字</label>
+                <input type="text" id="petName" name="petName" placeholder="您家宝贝叫什么？">
+              </div>
+              <div class="form-group">
+                <label for="petAge">宠物年龄</label>
+                <input type="text" id="petAge" name="petAge" placeholder="例如：2岁">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="serviceType">预约服务 <span class="required">*</span></label>
+              <select id="serviceType" name="serviceType" required>
+                <option value="">请选择服务类型</option>
+                <option value="checkup">健康体检</option>
+                <option value="vaccine">疫苗接种</option>
+                <option value="internal">内科诊疗</option>
+                <option value="surgery">外科手术</option>
+                <option value="skin">皮肤专科</option>
+                <option value="dental">牙科护理</option>
+                <option value="emergency">急诊服务</option>
+                <option value="other">其他服务</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="appointmentDate">预约日期 <span class="required">*</span></label>
+                <input type="date" id="appointmentDate" name="appointmentDate" required>
+              </div>
+              <div class="form-group">
+                <label for="appointmentTime">预约时间 <span class="required">*</span></label>
+                <select id="appointmentTime" name="appointmentTime" required>
+                  <option value="">请选择时间段</option>
+                  <option value="09:00">09:00 - 10:00</option>
+                  <option value="10:00">10:00 - 11:00</option>
+                  <option value="11:00">11:00 - 12:00</option>
+                  <option value="14:00">14:00 - 15:00</option>
+                  <option value="15:00">15:00 - 16:00</option>
+                  <option value="16:00">16:00 - 17:00</option>
+                  <option value="17:00">17:00 - 18:00</option>
+                  <option value="18:00">18:00 - 19:00</option>
+                  <option value="19:00">19:00 - 20:00</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="message">补充说明</label>
+              <textarea id="message" name="message" rows="3" placeholder="请简要描述宠物的情况或您的需求...（选填）"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-full">
+              <span>提交预约</span>
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <img src="logo.svg" alt="壹嘉宠物医院" class="footer-logo">
+          <p class="footer-slogan">用心呵护每一个小生命</p>
+          <div class="footer-social">
+            <a href="#" class="social-link" title="微信">
+              <svg viewBox="0 0 24 24" fill="currentColor" width="20" height="20"><path d="M9.5 4C5.36 4 2 6.69 2 10c0 1.89 1.08 3.56 2.78 4.66l-.7 2.1 2.53-1.26c.85.27 1.77.42 2.72.46A6.97 6.97 0 019 14.5C9 10.91 12.13 8 16 8c.34 0 .68.02 1.01.06C16.06 5.16 13.06 3 9.5 3v1zm-2.7 4a1 1 0 110-2 1 1 0 010 2zm5.2 0a1 1 0 110-2 1 1 0 010 2z"/><path d="M22 14.5c0-2.76-2.69-5-6-5s-6 2.24-6 5 2.69 5 6 5c.7 0 1.37-.1 2-.28l2 1-.56-1.67C21.12 17.33 22 16 22 14.5zm-8-1a.8.8 0 110-1.6.8.8 0 010 1.6zm4 0a.8.8 0 110-1.6.8.8 0 010 1.6z"/></svg>
+            </a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <div class="footer-col">
+            <h4>快速导航</h4>
+            <a href="#about">关于我们</a>
+            <a href="#services">医疗服务</a>
+            <a href="#team">专家团队</a>
+            <a href="#contact">预约咨询</a>
+          </div>
+          <div class="footer-col">
+            <h4>服务项目</h4>
+            <a href="#services">健康体检</a>
+            <a href="#services">疫苗接种</a>
+            <a href="#services">外科手术</a>
+            <a href="#services">皮肤专科</a>
+          </div>
+          <div class="footer-col">
+            <h4>联系方式</h4>
+            <p>联系人：张与医生</p>
+            <p>电话：<a href="tel:18507957950" style="color: rgba(255,255,255,0.7); transition: color 0.2s;" onmouseover="this.style.color='#1aab8a'" onmouseout="this.style.color='rgba(255,255,255,0.7)'">185-0795-7950</a></p>
+            <p>微信：YiJia-petclinic</p>
+            <p>营业：9:00 - 21:00</p>
+          </div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 壹嘉宠物医院 YIJIA PET HOSPITAL. All rights reserved.</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <a href="#hero" class="back-to-top" id="backToTop" aria-label="回到顶部">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 15l-6-6-6 6"/></svg>
+  </a>
+
+  <script src="script.js"></script>
+</body>
+</html>
